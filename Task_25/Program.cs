@@ -4,18 +4,18 @@ Console.WriteLine("Введите число: ");
 int number = int.Parse(Console.ReadLine()!);
 
 Console.WriteLine("Введите степень: ");
-int num2 = int.Parse(Console.ReadLine()!);
+int degree = int.Parse(Console.ReadLine()!);
 
 int getSumNumber(int numA)
 {
     int result = number;
-    for (int i = 1; i < num2; i++)
+    for (int i = 1; i < degree; i++)
     {
         result *= number; 
     }
     return result;                                                                                
 }
 
-Console.WriteLine($"{number}^{num2} = {getSumNumber(number)}");
+Console.WriteLine($"{number}^{degree} = {getSumNumber(number)}");
 
 
