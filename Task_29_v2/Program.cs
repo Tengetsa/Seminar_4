@@ -1,11 +1,21 @@
 ﻿// Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
 
+
+void Task29()
+{
+    int size = 8;
+    int[] array = new int[size];
+    FillArray(array);
+    PrintArray(array);
+}
+
 void FillArray(int[] construction)
 {
+    Random number = new Random();
     int length = construction.Length;
     for (int index = 0; index < length; index++)
     {
-        construction[index] = new Random().Next(-99, 100);
+        construction[index] = number.Next(-99, 100);
     }
 }
 
@@ -18,7 +28,5 @@ void PrintArray(int[] print)
     }
 }
 
-int[] array = new int[8];
+Task29();
 
-FillArray(array);
-PrintArray(array);
